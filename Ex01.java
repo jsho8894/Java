@@ -1,6 +1,6 @@
-class Ex01//Å¬·¡½º ¼±¾ğ
+ï»¿class Ex01//í´ë˜ìŠ¤ ì„ ì–¸
 {
-	public static void main(String[] args){ //¸ŞÀÎÅ¬·¡½º ¼±¾ğ
-		System.out.println("welcome java world~~"); //Ãâ·Â
+	public static void main(String[] args){ //ë©”ì¸í´ë˜ìŠ¤ ì„ ì–¸
+		System.out.println("welcome java world~~"); //ì¶œë ¥
 	}
 }
