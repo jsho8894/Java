@@ -1,0 +1,9 @@
+package com.bit.day24;
+
+public class Ex07 {
+
+	public static void main(String[] args) {
+		String path = "data.bin";
+		String path2 = "data2.bin";
+	}
+}

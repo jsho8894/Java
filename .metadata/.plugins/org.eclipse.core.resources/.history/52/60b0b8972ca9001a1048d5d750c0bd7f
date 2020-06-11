@@ -1,0 +1,12 @@
+package day24;
+
+import java.awt.Frame;
+
+public class Ex01 extends Frame{
+	public Ex01() {
+		
+	}
+	public static void main(String[] args) {
+		new Ex01();
+	}
+}

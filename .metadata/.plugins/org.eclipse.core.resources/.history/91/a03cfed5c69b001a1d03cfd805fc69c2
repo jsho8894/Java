@@ -1,0 +1,12 @@
+package com.bit.day13;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		System.out.println("JavaWebFramework");
+		StringBuffer sb1 = new StringBuffer();
+		//StringBuffer sb2 = "";
+		StringBuilder sb3 = new StringBuilder("");
+		
+		System.out.println(sb1);
+	}
+}

@@ -1,0 +1,25 @@
+package com.bit.tcp01;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class Server {
+
+	public static void main(String[] args) {
+		int port = 8080;
+		java.net.ServerSocket serve = null;
+		
+		try {
+			serve = new ServerSocket(port);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				if(serve!=null)serve.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

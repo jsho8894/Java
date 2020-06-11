@@ -1,0 +1,15 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+
+public class Ex17 extends Frame {
+	public Ex17() {
+		
+		setSize(800, 600);
+		setLocation(200,200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex17();
+	}
+}

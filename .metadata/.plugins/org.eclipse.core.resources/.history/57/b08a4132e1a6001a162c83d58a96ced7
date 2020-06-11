@@ -1,0 +1,12 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+
+public class Ex08 extends Frame{
+	public Ex08() {
+		addMouseListener(this);
+	}
+	public static void main(String[] args) {
+		new Ex08();
+	}
+}

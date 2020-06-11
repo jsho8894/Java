@@ -1,0 +1,19 @@
+package com.bit.day12;
+
+public class Ex02 {
+	
+	public static void main(String[] args) {
+		//예외처리
+		String msg = "1234원";
+//		for(int i=0; i<msg.length(); i++){
+//			if(Character.isDigit(msg.charAt(i))){
+//				
+//			}else{
+//				System.out.println("숫자가아닌 문자가 들어갔습니다");
+//				return ;
+//			}
+//		}
+		Integer su = new Integer(msg);
+		System.out.println("su=" + su);
+	}
+}

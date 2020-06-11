@@ -1,0 +1,39 @@
+package com.bit.tcp01;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+
+	public static void main(String[] args) {
+		int port = 8080;
+		java.net.ServerSocket serve = null;
+		Socket sock = null;
+		java.io.OutputStream os = null;
+		try {
+			serve = new ServerSocket(port);
+			System.out.println("server:접속대기중...");
+			sock = serve.accept();
+			System.out.println("server:접속되었습니다.");
+			
+//			String msg = "환영합니다";
+//			os = sock.getOutputStream();
+//			os.write(msg.getBytes());
+//			os.flush();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				
+				if(os!=null)os.close();
+				if(sock!=null)sock.close();
+				if(serve!=null)serve.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

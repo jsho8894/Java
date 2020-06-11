@@ -1,0 +1,18 @@
+package com.bit.day12;
+
+public class Ex14 {
+	public static void main(String[] args) {
+		String msg = "JavaWebFramework";
+		
+		int su = msg.indexOf("web");
+		String st1 = msg.replace('z', 'Z');
+		char ch = msg.charAt(0);
+		boolean boo1 = msg.contains("web");
+		boolean boo2 = msg.startsWith("ja");
+		boolean boo3 = msg.endsWith("work");
+		
+		String st2 = msg.toLowerCase();
+		String st3 = msg.toUpperCase();
+		System.out.println(st2);
+	}
+}

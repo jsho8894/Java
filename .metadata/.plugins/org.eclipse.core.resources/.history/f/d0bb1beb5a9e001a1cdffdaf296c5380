@@ -1,0 +1,23 @@
+package com.bit.day14;
+
+class Student{
+	int num;
+	String name;
+	int kor,eng,math;
+	
+	Student(int num){
+		this.num = num;
+	}
+}
+
+public class Ex12 {
+	public static void main(String[] args) {
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		System.out.println("총원");
+		int max = Integer.parseInt(sc.nextLine());
+		while(true){
+			System.out.println("1.목록 2.입력 3.수정 4.삭제 0.종료");
+		}
+		
+	}
+}

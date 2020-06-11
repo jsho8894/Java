@@ -1,0 +1,9 @@
+package com.bit.day14;
+
+public class Ex14 {
+	public static void main(String[] args) {
+		java.util.Scanner sc = null;
+		sc = new java.util.Scanner(System.in);
+		System.out.pritnln(sc.nextLine());
+	}
+}

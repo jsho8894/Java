@@ -1,0 +1,12 @@
+package com.bit.tcp01;
+
+public class Client {
+
+	public static void main(String[] args) {
+		String ip = "127.0.0.1";
+		
+		int port = 8080;
+		java.net.Socket sock = null;
+	}
+
+}

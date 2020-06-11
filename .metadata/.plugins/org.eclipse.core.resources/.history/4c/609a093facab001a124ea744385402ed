@@ -1,0 +1,30 @@
+package com.bit.tcp02;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class EchoServer {
+
+	public static void main(String[] args) {
+		//한글x - 문자열 스트림
+		//콘솔복잡 - 서버실행 메시지x
+		//종료x - null
+		int port = 8080;
+		ServerSocket serv = null;
+		
+		try {
+			serv = new ServerSocket(port);
+			serv.accept();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally{
+			try {
+				if(serv!=null)serv.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

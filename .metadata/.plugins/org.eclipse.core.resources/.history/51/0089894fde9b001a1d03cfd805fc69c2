@@ -1,0 +1,12 @@
+package com.bit.day13;
+
+public class Ex07 {
+	static Ex07 ex = new Ex07();
+	
+	public void func01(){}
+	
+	public static void main(String[] args) {
+		System.out.println("Ãâ·Â");	
+		System.exit(1);
+	}
+}

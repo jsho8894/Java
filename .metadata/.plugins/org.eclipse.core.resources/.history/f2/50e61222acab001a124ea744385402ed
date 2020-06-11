@@ -1,0 +1,11 @@
+package com.bit.tcp02;
+
+public class EchoServer {
+
+	public static void main(String[] args) {
+		//한글x - 문자열 스트림
+		//콘솔복잡 -UI
+		//종료x
+	}
+
+}

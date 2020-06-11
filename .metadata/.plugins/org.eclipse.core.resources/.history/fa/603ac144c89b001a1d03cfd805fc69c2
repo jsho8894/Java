@@ -1,0 +1,24 @@
+package com.bit.day13;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		String msg1 = new String("JavaWebFramework");
+		StringBuffer sb1 = new StringBuffer("JavaWebFramework");
+		//StringBuffer sb2 = "";
+		StringBuilder sb3 = new StringBuilder(sb1);//문자열 관련해서 들어갑니다.
+		StringBuffer sb4 = new StringBuffer(10);
+		System.out.println(sb4);
+		
+		System.out.println(msg1.length());
+		System.out.println(sb1.length());
+		
+		//입력수정삭제조회 CRUD
+		StringBuffer sb5 = new StringBuffer("Java");
+		StringBuffer sb6 = new StringBuffer("web");
+		//StringBuffer sb7 = sb5 + sb6;
+		StringBuffer sb7 = sb5.append(sb6);
+		//String msg2 = "sb7="+sb7;
+		System.out.println(sb7);
+		
+	}
+}

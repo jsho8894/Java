@@ -1,0 +1,9 @@
+package com.bit.day14;
+
+public class Ex07 {
+	public static void main(String[] args) {
+								//new java.util.Calendar
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+		System.out.println(cal.toString());
+	}
+}

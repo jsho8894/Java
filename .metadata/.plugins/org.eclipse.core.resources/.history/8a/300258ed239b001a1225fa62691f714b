@@ -1,0 +1,10 @@
+package com.bit.day12;
+
+public class Ex10 {
+	public static void main(String[] args) {
+		java.util.Scanner sc= new java.util.Scanner(System.in);
+		String msg = null;
+		
+		System.out.println("주민번호 입력");
+	}
+}

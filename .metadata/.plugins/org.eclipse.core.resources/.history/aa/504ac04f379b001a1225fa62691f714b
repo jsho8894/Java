@@ -1,0 +1,22 @@
+package com.bit.day12;
+
+public class Ex13 {
+	public static void main(String[] args) {
+		//String 클래스
+		String msg1 = "java";
+		String msg2 = "Web";
+		String msg3 = msg1.concat(msg2);//두가지 이상의 문자열을 붙일수 있으며
+		System.out.println(msg3);//javaWeb
+		
+		String msg4 = "JavaWebSpring";
+		
+		String msg5 = msg4.substring(4);//문자를 잘라 자신이 지정한범위를 보여줄수있습니다
+		String msg6 = msg4.substring(4,7);
+		String msg7 = msg4.substring(0,4);
+		String msg8 = msg4.substring(4,msg4.length());
+		
+		String msg9 = msg4.replace("web","DB");
+		
+		System.out.println(msg9);
+	}
+}

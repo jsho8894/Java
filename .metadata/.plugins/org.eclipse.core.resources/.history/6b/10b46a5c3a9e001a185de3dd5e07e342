@@ -1,0 +1,32 @@
+package com.bit.day14;
+
+import java.util.Calendar;
+
+public class Ex07 {
+	public static void main(String[] args) {
+								//new java.util.Calendar
+		java.util.Calendar cal = java.util.Calendar.getInstance();
+//		System.out.println(cal.toString());
+		
+		System.out.println(cal.get(1));
+		System.out.println(cal.get(Calendar.YEAR)+"년");
+		System.out.println(1+cal.get(Calendar.MONTH)+"월");
+		System.out.println(cal.get(Calendar.DATE)+"일");
+		System.out.println("\t");		
+				
+//		System.out.println(cal.get(Calendar.AM)+"시");
+//		System.out.println(cal.get(Calendar.AM_PM)+"시");
+		if(cal.get(Calendar.AM)==0){
+			System.out.println("a.m");
+			System.out.println(cal.get(Calendar.HOUR)+"시");
+		}else if(cal.get(Calendar.AM)==1){
+			System.out.println("p.m");
+			System.out.println(cal.get(Calendar.HOUR)+"시");
+		}
+		
+		System.out.println(cal.get(Calendar.HOUR)+"시");
+		System.out.println(cal.get(Calendar.MINUTE)+"분");
+		System.out.println(cal.get(Calendar.SECOND)+"초");
+
+	}
+}

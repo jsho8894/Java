@@ -1,0 +1,10 @@
+package com.bit.day12;
+
+public class Ex15 {
+	public static void main(String[] args) {
+		String msg1 = "abcd";
+		String msg2 = "abcd";
+		
+		System.out.println(msg1.compareTo(msg2));
+	}
+}

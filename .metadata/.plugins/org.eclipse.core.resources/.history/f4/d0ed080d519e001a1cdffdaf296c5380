@@ -1,0 +1,12 @@
+package com.bit.day14;
+
+public class Ex11 {
+	public static void main(String[] args) {
+		//학생성적관리프로그램(ver 0.1.1)
+		java.util.Scanner sc = new java.util.Scanner(System.in);
+		String[] data  = null;		
+		System.out.println("총원");
+		data = new String[sc.nextInt()];
+		
+	}
+}

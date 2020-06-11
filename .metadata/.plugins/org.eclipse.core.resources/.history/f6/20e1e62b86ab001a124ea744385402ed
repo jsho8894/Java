@@ -1,0 +1,18 @@
+package com.bit.day27;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		String spec="";
+		java.net.URL url = null;
+		try{
+			url = new URL(spec);
+		}catch(MalformedURLException e){
+			e.printStackTrace();
+		}
+		
+	}
+}

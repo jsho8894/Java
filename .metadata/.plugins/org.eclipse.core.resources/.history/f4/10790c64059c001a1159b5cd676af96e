@@ -1,0 +1,12 @@
+package com.bit.day13;
+
+public class Ex09 {
+	public static void main(String[] args) {
+		java.util.Scanner sc = null;
+		sc = new java.util.Scanner(System.in);
+		String title = "학생성적 관리 프로그램(ver 0.1.0)";
+		String menu = "1.보기 2.입력 3.수정 4.삭제 0.종료";
+		
+		int[][] data = null;
+	}
+}

@@ -1,0 +1,17 @@
+package com.bit.day14;
+
+interface inter01{
+	
+	public static final int su1 = 1111;
+	static final int su2 = 2222;
+	final int su3 = 3333;
+	public abstract void func01();
+	public void func02();//abstract생략가능
+	void func03();//default(X) public(O)
+}
+
+public class Ex04 {
+	public static void main(String[] args) {
+		
+	}
+}

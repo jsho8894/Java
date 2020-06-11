@@ -1,0 +1,30 @@
+package com.bit.tcp02;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class EchoClient {
+
+	public static void main(String[] args) {
+		String ip = "192.168.0.191";
+		int port = 8080;
+		Socket sork = null;
+				
+		try {
+			sork = new Socket(ip,port);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				if(sork != null)sork.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}

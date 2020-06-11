@@ -1,0 +1,9 @@
+package com.bit.day12;
+
+public class Ex05 {
+	public static void main(String[] args) {
+		String msg = "1";
+		int[] arr = {1,2,3,4,5};
+		System.out.println(arr[su]);
+	}
+}

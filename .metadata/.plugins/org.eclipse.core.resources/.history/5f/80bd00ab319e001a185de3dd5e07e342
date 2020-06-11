@@ -1,0 +1,13 @@
+package com.bit.day14;
+
+interface Inter05 extends Inter04,Inter03{
+	void func02();
+}
+
+public class Ex05 {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

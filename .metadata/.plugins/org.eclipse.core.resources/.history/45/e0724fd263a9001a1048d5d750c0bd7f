@@ -1,0 +1,13 @@
+package com.bit.day24;
+
+import java.io.File;
+
+public class Ex11 {
+	public static void main(String[] args) {
+		String path = "data.bin";
+		String path2 = "data2.bin";
+		
+		File src = new File(path);
+		File target = new File(path2);
+	}
+}

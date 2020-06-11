@@ -1,0 +1,50 @@
+package com.bit.day26;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+
+public class Ex04 {
+	public static void main(String[] args) {
+		InputStream is = null;
+		java.io.InputStreamReader  isr = null;
+		java.io.OutputStreamWriter osw = null;
+		BufferedReader br = null;
+		char[] cbuf = new char[5];
+		
+		try {
+			is = new FileInputStream("text01.txt");
+			isr = new InputStreamReader(is);
+			br = new BufferedReader(isr);
+			osw = new OutputStreamWriter(System.out);
+			
+//			int su = -1;
+			String msg = null;
+			while((msg = br.readLine()) != null){
+				osw.write(msg);
+				osw.write("\n");
+			}
+			
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}catch (IOException e) {
+			e.printStackTrace();
+		} finally{
+			try {			
+				
+				if(osw!=null)osw.close();
+				if(br!=null)br.close();
+				if(isr!=null)isr.close();
+				if(is!=null)is.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

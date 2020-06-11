@@ -1,0 +1,24 @@
+package com.bit.day13;
+
+public class Ex07 {
+	static Ex07 ex = new Ex07();
+	
+	public void func01(){}
+	
+	public static void main(String[] args) {
+		System.out.println("출력");	
+		//System.exit(1);//jvm을 그냥 다운시켜버립니다
+		
+		int[] orgin = {1,3,5,7,9};
+		int[] dest = new int[5];
+		
+//		for(int i= 0; i<orgin.length; i++){
+//			dest[i] = orgin[i];
+//		}
+		System.arraycopy(orgin, 0, dest, 0, 5);
+		
+		for(int i= 0; i<orgin.length; i++){
+			dest[i] = orgin[i];
+		}
+	}
+}

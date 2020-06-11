@@ -1,0 +1,13 @@
+package com.bit.day14;
+
+public class Ex14 {
+	public static void main(String[] args) {
+		java.io.InputStream inn = System.in;
+		
+		String msg = "java\nweb\nframewwork";
+		
+		java.util.Scanner sc = null;
+		sc = new java.util.Scanner(inn);
+		System.out.println(sc.nextLine());
+	}
+}

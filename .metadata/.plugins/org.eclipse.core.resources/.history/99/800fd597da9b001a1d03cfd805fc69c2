@@ -1,0 +1,12 @@
+package com.bit.day13;
+
+public class Ex06 {
+	public static void main(String[] args) {
+		double su1 = 3.54;
+		System.out.println(Math.round(su1));
+		System.out.println(Math.floor(su1));
+		System.out.println(Math.ceil(su1));
+		
+		
+	}
+}

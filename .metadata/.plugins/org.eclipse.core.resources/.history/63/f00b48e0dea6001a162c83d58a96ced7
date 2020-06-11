@@ -1,0 +1,12 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+
+public class Ex07 extends Frame{
+	public Ex07() {
+		
+	}
+	public static void main(String[] args) {
+		new Ex07();
+	}
+}

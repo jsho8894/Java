@@ -1,0 +1,15 @@
+package com.bit.day26;
+
+import java.awt.Frame;
+
+
+
+public class Ex11 extends Thread{
+
+	public static void main(String[] args) {
+		Frame f = new Frame();
+		f.setSize(1125,1000);
+		f.setLocation(200,200);
+		f.setVisible(true);
+	}
+}

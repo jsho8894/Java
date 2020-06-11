@@ -1,0 +1,39 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.TextEvent;
+import java.awt.event.TextListener;
+
+public class Ex14 extends Frame implements ActionListener{
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	public Ex14() {
+		Panel p = new Panel();
+		TextField tf = new TextField(15);
+//		tf.addTextListener(this);
+		tf.addActionListener(this);
+		p.add(tf);
+		
+		add(p);
+		setSize(500, 300);
+		setLocation(200,200);
+		setVisible(true);
+	}
+//	public void textValueChanged(TextEvent e) {
+	//클래스에 implements TextListener 추가
+//		System.out.println(((TextField)e.getSource()).getText());
+//		
+//	}
+	
+	public static void main(String[] args) {
+		new Ex14();
+	}
+
+}

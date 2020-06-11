@@ -1,0 +1,38 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+import java.awt.Menu;
+import java.awt.Panel;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+
+class Lec17 implements WindowListener{
+	public void windowActivated(WindowEvent e) {}
+	public void windowClosed(WindowEvent e) {}
+	public void windowClosing(WindowEvent e) {}
+	public void windowDeactivated(WindowEvent e) {}
+	public void windowDeiconified(WindowEvent e) {}
+	public void windowIconified(WindowEvent e) {}
+	public void windowOpened(WindowEvent e) {}	
+}
+
+public class Ex17 extends Frame {	
+	public Ex17() {
+		Panel p = new Panel();
+		setTitle("제목없음");
+		addWindowListener(new Lec17(){
+			public void windowClosing(WindowEvent e){
+				dispose();
+			}
+		});
+		java.awt.Menu mn1 = new Menu();
+		
+		
+		setSize(800, 600);
+		setLocation(200,200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex17();
+	}
+}

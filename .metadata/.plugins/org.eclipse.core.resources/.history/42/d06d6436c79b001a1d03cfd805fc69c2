@@ -1,0 +1,13 @@
+package com.bit.day13;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		System.out.println("JavaWebFramework");
+		StringBuffer sb1 = new StringBuffer();
+		//StringBuffer sb2 = "";
+		StringBuilder sb3 = new StringBuilder(sb1);//문자열 관련해서 들어갑니다.
+		StringBuilder sb4 = new StringBuilder(10);
+		System.out.println(sb4);
+		
+	}
+}

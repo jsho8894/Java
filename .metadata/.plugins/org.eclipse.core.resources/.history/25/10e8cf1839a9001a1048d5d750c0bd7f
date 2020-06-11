@@ -1,0 +1,62 @@
+package com.bit.day24;
+
+import java.awt.Dialog;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.Menu;
+import java.awt.MenuBar;
+import java.awt.MenuItem;
+import java.awt.TextArea;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Ex02 extends Frame implements ActionListener{
+	public Ex02() {
+		
+		MenuBar mb = new MenuBar();
+		Menu m1 = new Menu("파일");
+		MenuItem mi1_1 = new MenuItem("새파일");
+		MenuItem mi1_2 = new MenuItem("열기");
+		MenuItem mi1_3 = new MenuItem("저장");
+		MenuItem mi1_4 = new MenuItem("종료");
+		m1.add(mi1_1);
+		m1.addSeparator();
+		m1.add(mi1_2);
+		m1.add(mi1_3);
+		m1.addSeparator();
+		m1.add(mi1_4);
+		
+		Menu m2 = new Menu("도움말");		
+		MenuItem m2_1 = new MenuItem("정보");
+		m2_1.addActionListener(this);
+		m2.add(m2_1);
+		
+		mb.add(m1);
+		mb.add(m2);
+		
+		setMenuBar(mb);
+		TextArea ta = new TextArea();
+		add(ta);
+		setTitle("제목없음");
+		setSize(500,400);
+		setLocation(300,200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex02();
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		/////////////////////////////////////
+		java.awt.Dialog dia = new Dialog(this,"정보");
+		Label lal = new Label("by bit class01");
+		dia.setLayout(new FlowLayout());;
+		dia.add(lal);
+		dia.setSize(200,200);
+		dia.setLocation(this.getX()+100,this.getY()+100);
+		dia.setVisible(true);
+		/////////////////////////////////////
+		
+	}
+}

@@ -1,0 +1,11 @@
+package com.bit.tcp03;
+
+import java.net.ServerSocket;
+
+
+public class MultiServer extends Thread{
+	public static void main(String[] args) {
+		int port = 8080;
+		ServerSocket serv = null;
+	}
+}

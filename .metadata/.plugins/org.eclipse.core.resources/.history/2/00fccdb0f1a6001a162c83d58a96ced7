@@ -1,0 +1,21 @@
+package com.bit.day23;
+
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.TextField;
+
+public class Ex12 extends Frame{
+	public Ex12() {
+		Panel p = new Panel();
+		
+		TextField tf = new TextField();
+		p.add(tf);
+		add(p);
+		setSize(500, 300);
+		setLocation(300,200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex12();
+	}
+}

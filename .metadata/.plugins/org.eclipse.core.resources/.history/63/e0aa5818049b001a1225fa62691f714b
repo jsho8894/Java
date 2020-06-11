@@ -1,0 +1,7 @@
+package com.bit.day11;
+
+class Lec01 {
+	public void func01(){
+		System.out.println("Lec01 func01...");
+	}
+}

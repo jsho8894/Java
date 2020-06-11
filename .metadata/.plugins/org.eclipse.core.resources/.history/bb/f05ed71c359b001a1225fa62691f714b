@@ -1,0 +1,13 @@
+package com.bit.day12;
+
+public class Ex13 {
+	public static void main(String[] args) {
+		//String Å¬·¡½º
+		String msg1 = "java";
+		String msg2 = "Web";
+		String msg3 = msg1.concat(msg2);
+		System.out.println(msg3);
+		String msg4 = msg3.substring(4);
+		System.out.println(msg4);
+	}
+}

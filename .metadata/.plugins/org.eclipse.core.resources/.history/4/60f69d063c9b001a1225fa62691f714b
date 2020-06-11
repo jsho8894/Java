@@ -1,0 +1,12 @@
+package com.bit.day12;
+
+public class Ex14 {
+	public static void main(String[] args) {
+		String msg = "JavaWebFramework";
+		
+		int su = msg.indexOf("web");
+		String st1 = msg.replace('z', 'Z');
+		char ch = msg.charAt(-1);
+		System.out.println(ch);
+	}
+}

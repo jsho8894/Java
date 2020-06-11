@@ -1,0 +1,13 @@
+package com.bit.day12;
+
+public class Ex13 {
+	public static void main(String[] args) {
+		//String 클래스
+		String msg1 = "java";
+		String msg2 = "Web";
+		String msg3 = msg1.concat(msg2);
+		System.out.println(msg3);//javaWeb
+		String msg4 = msg3.substring(1);//문자중 4번째문자 이후 부터 가져옵니다.
+		System.out.println(msg4);
+	}
+}

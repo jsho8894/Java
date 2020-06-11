@@ -1,0 +1,11 @@
+package com.bit.day14;
+
+interface Inter04{}
+
+public class Ex05 {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

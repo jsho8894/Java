@@ -1,0 +1,19 @@
+package com.bit.day26;
+
+import java.awt.BorderLayout;
+import java.awt.Frame;
+
+
+
+public class Ex11 extends Thread{
+
+	public static void main(String[] args) {
+		Frame f = new Frame();
+		f.setLayout(new BorderLayout());
+		
+		
+		f.setSize(1125,1000);
+		f.setLocation(200,0);
+		f.setVisible(true);
+	}
+}

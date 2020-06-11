@@ -1,0 +1,13 @@
+package com.bit.day12;
+
+public class Ex06 {
+	public static void main(String[] args) {
+		for(int i = 0; i<5; i++){
+			func01(i);
+		}
+	}
+	public static void func01(int a){
+		int[] arr = {1,2,3,4,5};
+		System.out.println(arr[a]);
+	}
+}

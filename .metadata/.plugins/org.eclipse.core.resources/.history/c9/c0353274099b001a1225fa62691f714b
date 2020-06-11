@@ -1,0 +1,15 @@
+package com.bit.day12;
+
+public class Ex03 {
+	public static void main(String[] args) {
+		String msg ="0";
+		try{
+			int su = Integer.parseInt(msg);
+			double su2 = 10.0/su;
+			System.out.println("10/" + msg + "=" + su2);
+		}catch(NumberFormatException e){
+			System.out.println("숫자로만 입력하세요");
+		}
+
+	}
+}

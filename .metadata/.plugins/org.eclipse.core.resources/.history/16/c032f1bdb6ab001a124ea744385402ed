@@ -1,0 +1,39 @@
+package com.bit.tcp03;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+public class MultiServer extends Thread{
+	Socket sock;
+	public MultiServer(Socket sock){
+		
+	}
+	
+	public void run(){
+		
+	}
+	
+	public static void main(String[] args) {
+		int port = 8080;
+		ServerSocket serv = null;
+		
+		try {
+			serv = new ServerSocket(port);
+			while(true){
+				Socket sock = serv.accept();
+				MultiServer thr = new MultiServer(sock);
+				thr.start();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				if(serv!=null)serv.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

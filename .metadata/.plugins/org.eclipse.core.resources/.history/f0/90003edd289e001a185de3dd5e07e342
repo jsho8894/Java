@@ -1,0 +1,16 @@
+package com.bit.day14;
+abstract class Lec03{
+	Lec03(){
+		System.out.println("creat Lec03...");
+	}
+	void func(){
+		System.out.println("구현된 정상적인 메서드 입니다");
+	}
+}
+class Lec33 extends Lec03(){}
+public class Ex03 {
+	public static void main(String[] args) {
+		Lec33 you = new Lec03();
+		
+	}
+}

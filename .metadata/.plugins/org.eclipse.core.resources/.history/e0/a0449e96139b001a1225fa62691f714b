@@ -1,0 +1,12 @@
+package com.bit.day12;
+
+public class Ex07 {
+	public static void main(String[] args) {
+		System.out.println("main start...");
+		func01();
+		System.out.println("main end");
+	}
+	public static void func01(){
+		NumberFormatException err = new NumberFormatException();
+	}
+}

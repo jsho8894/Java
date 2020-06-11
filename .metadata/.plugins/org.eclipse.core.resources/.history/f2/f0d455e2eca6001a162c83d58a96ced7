@@ -1,0 +1,20 @@
+package com.bit.day23;
+
+import java.awt.Button;
+import java.awt.Frame;
+
+public class Ex09 extends Frame{
+	public Ex09() {
+		setLayout(null);
+		Button btn1 = new Button("¹öÆ°1");
+		btn1.setSize(200,200);
+		
+		add(btn1);
+		setSize(800, 600);
+		setLocation(200,200);
+		setVisible(true);
+	}
+	public static void main(String[] args) {
+		new Ex09();
+	}
+}
